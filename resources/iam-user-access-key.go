@@ -102,6 +102,7 @@ func (l *IAMUserAccessKeyLister) List(_ context.Context, o interface{}) ([]resou
 				accessKeyID: *meta.AccessKeyId,
 				userName:    *meta.UserName,
 				status:      *meta.Status,
+				createDate:  meta.CreateDate,
 				userTags:    userTags.Tags,
 			})
 		}
